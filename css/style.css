@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script:wght@400..700&family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+:root {
+    --color-fondo-principal: #b4acac;
+}
+
+html {
+    background-color: var(--color-fondo-principal);
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+    background-color: rgba(16, 145, 49, 0.61);
+    font-size: 3ch;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background-color: var(--color-fondo-hover);
+    border-radius: 5px
+}
+
+.link {
+
+    color: black;
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.texto-index {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.seccion-felino {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-responsive {
+    width: 60%;
+    height: 20%;
+    max-width: 900px;
+}
+
+.destacados {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.tarjeta {
+    justify-content: left;
+    font-size: 20px;
+    margin: 24px;
+    color: rgb(36, 35, 35);
+    font-family: 'Underdog', cursive;
+}
+
+.texto-indice-perro {
+    display: flex;
+    font-size: 20px;
+    margin: 19px;
+
+}
+
+.información-perros{
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 19px;
+    font-weight: 900;
+    background-color: rgb(151, 147, 147);
+    border-radius: 18.5px;
+    padding: 0.75rem 1rem
+    }
+
+.texto-indice-pantera {
+    display: flex;
+    font-size: 20px;
+    margin: 19px;
+}
+
+.información-panteras{
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 19px;
+    font-weight: 900;
+    background-color: rgb(151, 147, 147);
+    border-radius: 18.5px;
+    padding: 0.75rem 1rem
+}
+.contenedor-formulario {
+    max-width: 600px;
+    margin: 2rem auto; 
+    padding: 20px;
+    border: 1px solid color(black);
+    border-radius: 20px;
+   
+    
+}
+.contenedor-formulario label,
+.contenedor-formulario input[type="text"],
+.contenedor-formulario input[type="email"],
+.contenedor-formulario textarea {
+    display: block; 
+    width: 100%; 
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #0a0a0a;
+    border-radius: 4px;
+    color: black;
+    background-color:rgb(199, 192, 192);
+}
+.boton-enviar {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+   
+}
+
+.galeria-contenedor-flex {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.galeria-item {
+    width: calc(33.33% - 1.5rem); 
+    margin-bottom: 1.5rem; 
+}
+.imagen-responsive-grid {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+@media (max-width: 992px) {
+    .galeria-item {
+        width: calc(50% - 1.5rem); 
+    }
+}
+@media (max-width: 576px) {
+    .galeria-item {
+        width: 100%; 
+        margin-bottom: 1rem;
+    }
+}
+
+.texto_perros_informacion{
+    display: flex;
+    font-size: 25px;
+    margin: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.texto_panteras_informacion{
+     display: flex;
+    font-size: 25px;
+    margin: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.Características{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgba(49, 48, 48, 0.986);
+    font-family:'Akaya Telivigala', cursive;
+}
+.tabla-titulo {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tabla-caracteristicas {
+    margin: 0 auto; 
+    width: 80%; 
+    border-collapse: collapse;
+}
+.tabla-caracteristicas th, 
+.tabla-caracteristicas td {
+    padding: 0.75rem; 
+    border: 1px solid #ccc; 
+    text-align: left;
+    font-size: 20px;
+}
+.tabla-caracteristicas thead th {
+    background-color: var(--color-fondo-principal); 
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+}
+.tabla-caracteristicas tbody tr:nth-child(even) {
+    background-color: #a59b9b;
+}
+footer {
+    background-color: rgb(63, 62, 62); 
+    color: rgb(223, 221, 221);
+    padding: 2rem 0; 
+}
+.footer-grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+.footer-columna h4 {
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .footer-grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
